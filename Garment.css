@@ -472,7 +472,6 @@ main > h1{
 
     .mission-div p{
         width:90%;
-        font-size:1.5rem;
     }
 
     
@@ -497,9 +496,6 @@ main > h1{
 }
 
 @media (max-width:768px) {
-    html{
-        font-size: 59%;
-    }
     hr{
         display:hidden;
     }
@@ -537,7 +533,7 @@ main > h1{
         margin-top: 10rem;
         padding-top: 3rem;
         border-radius: 0.5rem;
-        min-height: 70vh;
+        min-height: 75vh;
     }
     .about-div1__right{
         display:none;
@@ -659,3 +655,4 @@ main > h1{
         left: 0%;
     }
 }
+
