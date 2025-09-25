@@ -1,0 +1,661 @@
+*{ box-sizing:border-box;
+   list-style-type:none;
+   margin:0;
+   padding:0;
+   outline:none;
+   text-decoration:none;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size:62.5%;
+}
+h1, h2, h3, p,form {
+  opacity: 0;
+  transform: translateY(2rem);
+  animation: OP 1s forwards ;
+}
+@keyframes OP {
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+a{
+    color:black;
+}
+
+h1{
+    font-family: "Noto Serif kannada", sans-serif;
+    font-size:3.2rem;
+}
+
+h2{
+    font-family: "Noto Serif Kannada", sans-serif;
+    font-size:2.9rem;
+}
+h3{
+    font-family: "Noto Serif Kannada",sans-serif;
+    font-size:2.2rem;
+}
+.p1{
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.1rem;
+}
+.Menu{
+    background-image: url(GarmentImage/Garmentimage1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+.card{
+    box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+button{
+    border: none;
+    border-radius: 0.5rem;
+    background-color:#C1CFFE;
+    padding:0.7rem;
+    width:9rem;
+}
+hr{
+    background: linear-gradient(269.11deg, #6D64ED 3.25%, #8183F8 30.37%, #64ABED 53.42%, #315BE3 84.61%);
+    height:0.3rem;
+}
+
+
+/*Header section*/
+
+.nav-bar{
+    display:flex;
+    text-align: left;
+    margin-left:2.5rem;
+    gap:-1rem;
+}
+.nav-link{
+    padding:2.0rem;
+    font-size: 2rem;
+    margin-left:0.8rem;
+    letter-spacing: 0.1rem;
+    font-family: "Inter", sans-serif;
+    font-weight:600;
+}
+
+
+/*footer section*/
+
+footer{
+    background: linear-gradient(269.11deg, #6D64ED 3.25%, #8183F8 30.37%, #64ABED 53.42%, #315BE3 84.61%);
+    padding:2.3rem;
+    padding-left:5.0rem;
+    padding-right:13.0rem;
+}
+.footer{
+    display:flex;
+    justify-content: space-between;
+}
+.footer p{
+    font-size:1.8rem;
+    font-weight:400;
+
+}
+
+.footer-nav ul{
+    display:flex;
+    margin-bottom:2.5rem;
+}
+.footer-link{
+    font-size:1.9rem;
+    font-family: "inter", sans-serif;
+    font-weight: 500;
+}
+.footer-nav p{
+    font-weight: 500;
+}
+.copyright{
+    text-align:center;
+}
+.copyright p{
+    font-weight:600;
+    font-size:1.9rem;
+    margin-top:2.5rem;
+    
+}
+
+/*hero starts here*/
+
+main > h1{
+    margin-top: 20.0rem;
+    margin-left: 2.5rem;
+    margin-bottom: 1.0rem;
+    width:60%;
+    line-height:4.5rem;
+    font-family: "Noto Serif Kannada",sans-serif;
+}
+.hero-desc{
+    margin-left:2.5rem;
+    margin-top:0.5rem;
+    width:80%;
+    font-family: "Inter", sans-serif;
+    line-height:3rem;
+    letter-spacing: 0.08rem;
+    word-spacing: 0.2rem;
+    font-weight: 500;
+    font-size:2rem;
+}
+
+/*about starts here*/
+
+.about-div1{
+    display:flex;
+    justify-content: space-between;
+    margin-top:11.0rem;
+    min-height:90vh;
+}
+.about-div1__left{
+    flex:1.6;
+    margin-left:5.0rem;
+    padding-top:2.0rem;
+}
+.about-div1__left p{
+    width:90%;
+    line-height:3rem;
+    margin-bottom: 2.5rem;
+    margin-top:1.0rem;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-size: 1.9rem;
+    letter-spacing: 0.01rem;
+    word-spacing: 0.1rem;
+}
+.about-div1__right{
+    flex:1.4;
+    padding-right: 4rem;
+}
+.about-div1__right img{
+    height:40rem;
+    width:100%;
+}
+
+
+
+
+
+.mission-div{
+    width:93%;
+    margin:auto;
+    margin-bottom: 20.0rem;
+    padding:2.0rem;
+    min-height: 35vh;
+    border-radius: 1.0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(GarmentImage/Garmentimage2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mission-div p{
+    text-align: center;
+    width:90%;
+    font-family: "Inter",sans-serif; 
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.09rem;
+}
+
+
+
+
+
+.why-choose-us{
+    min-height: 80vh;
+    margin-bottom:5rem;
+}
+.why-choose-us h2{
+    margin-left: 5rem;
+}
+.why-choose-us__catagories{
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    padding:1rem;
+    margin-left: 4rem;
+
+}
+
+.why-choose-us__catagories div{
+    padding:2rem;
+    border-radius: 1rem;
+
+    height:18rem;
+    width:40rem;
+    flex: 0 0 calc(30% -2rem);
+
+    background-image: url(GarmentImage/Garmentimage6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+.why-choose-us__catagories div p{
+    font-size:1.9rem;
+    font-family: "Inter",sans-serif;
+    line-height:3rem;
+    font-weight: 450;
+}
+
+
+
+
+.FAQ{
+    padding-left: 5rem;
+    padding-top:5rem;
+    min-height: 50vh;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    background-color: white;
+}
+.FAQ div p{
+    font-family: "Inter",sans-serif;
+    font-size:1.9rem;
+    font-weight: 400;
+}
+.FAQ div{
+    margin-top: 3rem;
+    padding-right:5rem;
+}
+
+/*Service page starts here*/
+
+.service-div{
+    display:flex;
+    min-height: 85vh;
+    margin-top:11rem;
+    padding-left:5rem;
+}
+.service-div__1{
+    flex:1;
+}
+.service-div__1 p{
+    line-height:3rem;
+    font-weight: 470;
+    margin-top: 2rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1.9rem;
+    letter-spacing: 0.08rem;
+    word-spacing: 0.1rem;
+
+}
+.service-div__2{
+    flex:1;
+    position: relative;
+}
+.service-div__2 img{
+    width:31rem;
+    height: 29rem;
+    border-radius: 2rem;
+}
+.service__img1{
+    position: absolute;
+    top: 0%;
+    left: 35%;
+}
+.service__img2{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+
+
+
+
+.service-provide{
+    padding:5rem;
+    min-height: 95vh;
+}
+.service-provide h1{
+    margin-bottom:5rem;
+}
+.service-provide__desc{
+    font-size: 2rem;
+    font-family: "Inter",sans-serif;
+    font-weight:500;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.005rem;
+    line-height: 4rem;
+}
+.service__desc{
+    font-size: 1.85rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+
+
+
+.CTA{
+    width:93%;
+    margin:auto;
+    margin-bottom: 2rem;
+    margin-top:5rem;
+    margin-bottom: 20.0rem;
+    padding:1.0rem;
+    min-height: 24vh;
+    border-radius: 1.0rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    background: linear-gradient(90.69deg, #E0E8FF 7.46%, #D6CFFF 32.27%, #F2F2FF 49.22%, #C1CFFE 70.08%, #EBECFF 89.38%);
+}
+.CTA p{
+    font-size: 2rem;
+    font-family: "Inter",sans-serif;
+    font-weight: 500;
+    text-align:center;
+
+    width:85%;
+    letter-spacing: 0.06rem;
+    word-spacing: 0.1rem;
+
+}
+/*Contact section starts here*/
+
+.contact-page{
+    background-image: url(GarmentImage/Garmentimage1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.contact-div{
+    margin-top: 5rem;
+}
+.contact-div  > h1, .contact-div > p{
+    text-align:center;
+}
+.contact-div > p{
+    font-size:1.9rem;
+    font-family: "Inter" , sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.01rem;
+    word-spacing: 0.05rem;
+    line-height:2.5rem;
+
+    width:80%;
+    margin:auto;
+}
+.contact-info{
+    display:flex;
+    margin: 10rem 5rem;
+    gap: 20rem;
+    
+}
+
+.contact-right{
+    flex:1;
+}
+.contact-right p{
+    font-size:1.9rem;
+    font-family: "Inter",sans-serif;
+    letter-spacing: 0.01rem;
+    word-spacing: 0.05rem;
+    line-height:3rem;
+}
+.contact-left{
+    flex:1;
+}
+.contact-left form{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+
+    font-size: 2rem;
+    padding:2rem;
+    padding-bottom:5rem;
+    width:50rem;
+    border-radius: 1rem;
+    background-color: white;
+    
+}
+.contact-left input{
+    padding: 0.8rem;
+    border:none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.3rem 0.01rem black;
+}
+.contact-left label{
+    font-family: "Inter",sans-serif;
+    font-size:1.6rem;
+    font-weight:500;
+}
+
+
+
+@media (max-width:992px) {
+    /*common codes*/
+
+    html{
+        font-size: 61%;
+    }
+    footer{
+        padding-right:5rem;
+    }
+    /*hero section*/
+    main > h1{
+        width:75%;
+    }
+    .hero-desc{
+        width:90%;
+    }    
+
+    /*about section*/
+    .about-div1__left{
+        flex:1.6;
+    }
+    .about-div1__right{
+        flex: 1.4;
+    }
+
+
+    .mission-div p{
+        width:90%;
+        font-size:1.5rem;
+    }
+
+    
+    .why-choose-us__catagories{
+        gap:2rem;
+    }
+
+    .why-choose-us__catagories div{
+        height:18rem;
+        width:29.5rem;
+        flex: 0 0 calc(30% -2rem);
+    }
+
+    /*service page starts here*/
+
+    .service-div__2 img{
+        width:60%;
+        height: 50%;
+        border-radius: 2rem;
+    }
+
+}
+
+@media (max-width:768px) {
+    html{
+        font-size: 59%;
+    }
+    hr{
+        display:hidden;
+    }
+    
+    .footer{
+        flex-direction: column;
+        gap:3.0rem;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .footer-nav{
+        margin:auto;
+    }
+    .p1{
+        letter-spacing: 0.07rem;
+    }
+    
+    /*about section*/
+
+    .about-body{
+        background-image: url(GarmentImage/Garmentimage3.jpg);
+    }
+
+    .about-div1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:1rem;
+
+        box-shadow: 0 0 0.7rem 0.1rem gray;
+        background-color: white;
+        width:90%;
+        margin: auto;
+        margin-top: 10rem;
+        padding-top: 3rem;
+        border-radius: 0.5rem;
+        min-height: 70vh;
+    }
+    .about-div1__right{
+        display:none;
+    }
+
+
+
+    .mission-div{
+        margin-top: 10rem;
+    }
+    
+
+    .why-choose-us__catagories{
+        margin-left: 0rem;
+        padding:2rem;
+    }
+    .why-choose-us h2{
+        text-align:center;
+        color: white;
+        text-decoration: underline;
+        margin-left:0rem;
+    }
+    .why-choose-us__catagories div{
+        flex: 1 1 40%;
+        height:auto;
+    }
+
+    .FAQ{
+        margin-bottom: 0rem;
+        padding-bottom: 5rem;
+    }
+
+    /*service page starts here*/
+
+    .service-div{
+        flex-direction: column;
+        min-height:100vh;
+        padding-bottom:10rem;
+    }
+    .service-div__1{
+        flex: 1;
+    }
+    .service-div__1 p{
+        padding-right:5rem;
+    }
+    .service-div__2{
+        flex:2;
+    }
+    .service-div__2 img{
+        width:50%;
+        height: 110%;
+        border-radius: 2rem;
+    }
+    .service__img1{
+        position: absolute;
+        top: -25%;
+        left: 35%;
+    }
+    .service__img2{
+        position: absolute;
+        top: 10%;
+        left: 15%;
+    }
+    /*Contact Page starts here*/
+
+
+    .contact-info{
+        flex-direction: column;
+        align-items:center;
+    }
+    .contact-left form{
+        width: 45rem;
+    }
+    .contact-right p, .contact-right h2{
+        text-align:center;
+    }
+
+    
+    
+}
+
+@media (max-width:600px) {
+    .p1{
+        letter-spacing: 0.05;
+    }
+    .about-div1{
+        margin-top: 5rem;
+        gap: 0.2rem;
+    }
+    .about-div1__right img{
+        height:40rem;
+    }
+
+
+    .why-choose-us__catagories div{
+        width: 40rem;
+        flex: 0 0 calc(50%-3rem)
+    }
+    .why-choose-us__catagories div p{
+        line-height: 2.4rem;
+        font-size: 1.6rem;
+
+    }
+
+    /*service page starts here*/
+    .service-div__2 img{
+        width:60%;
+        height: 110%;
+        border-radius: 2rem;
+    }
+    .service__img1{
+        position: absolute;
+        top: -25%;
+        left: 25%;
+    }
+    .service__img2{
+        position: absolute;
+        top: 5%;
+        left: 0%;
+    }
+}
