@@ -1,0 +1,1 @@
+alert("This is a demo website I created as part of my portfolio. It focuses on clean design, easy navigation, and responsive layout. The project isn’t fully complete, but it’s only a glimpse of what I can do. When working with clients, I deliver fully finished, professional websites that are even better than this demo.");
